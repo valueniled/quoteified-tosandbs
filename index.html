@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>quoteified</title>
 <style>
-  :root {
-    color-scheme: dark;
-  }
+  :root { color-scheme: dark; }
   body {
     font-family: system-ui, -apple-system, sans-serif;
     max-width: 640px;
@@ -17,81 +15,76 @@
     color: #f0f0f0;
     background: #0d0d0d;
   }
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.25rem;
-    color: #ffffff;
-  }
-  .tagline {
-    color: #b0b0b0;
-    margin-top: 0;
-    font-size: 1.05rem;
-  }
-  .note {
-    color: #777;
-    font-size: 0.9rem;
-    font-style: italic;
-    margin-top: 1.5rem;
-  }
-  ul {
-    padding-left: 1.25rem;
-  }
-  li {
-    margin-bottom: 0.6rem;
-    color: #e0e0e0;
-  }
-  li strong {
-    color: #ffffff;
-  }
-  .cta {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    background: #5865F2;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-  }
-  .cta:hover {
-    background: #4752c4;
-  }
-  footer {
-    margin-top: 3rem;
-    font-size: 0.85rem;
-    color: #666;
-  }
+  h1 { font-size: 2.2rem; margin-bottom: 0.25rem; color: #fff; }
+  h2 { font-size: 1.5rem; margin-top: 2.5rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 0.4rem; }
+  h3 { font-size: 1.1rem; margin-top: 1.5rem; color: #fff; }
+  p { color: #d0d0d0; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.4rem; color: #d0d0d0; }
+  code { background: #1e1e1e; padding: 0.1rem 0.4rem; border-radius: 4px; color: #e0e0e0; }
+  a { color: #8ea1ff; }
 </style>
 </head>
 <body>
 
   <h1>quoteified</h1>
-  <p class="tagline">quotes by anyone, for everyone — community-made quotes visible to anyone</p>
+  <p>quotes by anyone, for everyone!</p>
+  <p>quoteified is a discord bot that people can submit quotes through and maybe share them with each other.</p>
 
-  <p class="note">(maow idk what else to write)</p>
+  <h2>terms of service</h2>
 
-  <p>here's the basics you need to know:</p>
-
+  <h3>1. do not submit these through the bot</h3>
   <ul>
-    <li>quoteified does not store any personal info <strong>(UNLESS YOU SUBMIT IT THROUGH /SUBMITQUOTE, why the fuck would you even do that???)</strong></li>
-    <li>quoteified only saves what you submit through /submitquote permanently</li>
-    <li>quoteified has no permissions to modify any servers (it only has send messages permission)</li>
-    <li>quoteified may display your username on quotes to others if you explicitly allowed it in the settings menu under "submitquote privacy setting"</li>
-    <li>quoteified would never send you any ads or such</li>
-    <li>all the things you submit through /submitquote are reviewed by human reviewers and not ai (ew ai)</li>
+    <li>you may not post inappropriate, disgusting, nsfw or racist content through /submitquote</li>
+    <li>do not submit quotes that violate Discord's own terms of service and so on</li>
   </ul>
 
-  <p>that's about it!!</p>
+  <h3>2. you must be at least 13 years old to use the bot (or the minimum age in your country)</h3>
+  <ul>
+    <li>this age requirement applies to using discord itself so there's nothing special here</li>
+  </ul>
 
-  <a class="cta" href="https://discord.com/oauth2/authorize?client_id=1546149660828106783">add it today!!!!</a>
+  <h3>3. the bot creator has the right to shut down the bot at any time without notice</h3>
 
-  <footer>
-    last updated: <span id="date"></span>
-  </footer>
+  <h3>4. the bot creator has the right to terminate/take away your access to the bot at any time if there has been a report of inappropriate, explicit or other rule-breaking content being submitted by you</h3>
 
-  <script>
-    document.getElementById('date').textContent = new Date().toLocaleDateString();
-  </script>
+  <h3>5. these terms may be updated any time</h3>
+
+  <h2>privacy policy</h2>
+
+  <p>quoteified only stores this data &amp; information.<br>
+  lines that have a * means that it depends on what privacy setting the user turned on in the bot itself</p>
+
+  <ul>
+    <li>*username of the quote author</li>
+    <li>*display name of the quote author</li>
+    <li>*user id of the quote author</li>
+    <li>the quote content itself (what text, image they attached to the /submitquote)</li>
+    <li>how many members a server has (to calculate how many "users" the bot is serving)</li>
+    <li>how many servers the bot is in (to calculate how many guilds the bot is in)</li>
+  </ul>
+
+  <h3>why it's stored</h3>
+  <ul>
+    <li>the personal info (username, display name, user id) are mainly stored so the reviewers can look into any other quotes they submitted to make sure they did not submit any rule breaking content beforehand, also; the quotes themselves display the quote author's info (display name and user avatar) if they turned it on themselves in /settings</li>
+    <li>how many members a server has; this is just for statistics and no other motive, it will most likely be removed in the future</li>
+    <li>how many servers the bot is in; also for statistics, will be removed in the future</li>
+  </ul>
+
+  <h3>how long is the info/data kept?</h3>
+  <ul>
+    <li>basically permanently (unless the user asks for deletion)</li>
+  </ul>
+
+  <h3>is the data shared with third parties?</h3>
+  <ul>
+    <li>no, the bot does not share data/info to third parties, also why would it do that?</li>
+  </ul>
+
+  <h3>how to submit a RFDFQ (request for deletion from quoteified)</h3>
+  <ul>
+    <li>contact the lead developer <code>@valueniled</code> through discord, twitter or any other platform</li>
+  </ul>
 
 </body>
 </html>
