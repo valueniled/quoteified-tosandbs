@@ -1,15 +1,89 @@
-quoteified
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>quoteified</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fafafa;
+  }
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+  }
+  .tagline {
+    color: #555;
+    margin-top: 0;
+    font-size: 1.05rem;
+  }
+  .note {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+  }
+  ul {
+    padding-left: 1.25rem;
+  }
+  li {
+    margin-bottom: 0.6rem;
+  }
+  .cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: #5865F2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .cta:hover {
+    background: #4752c4;
+  }
+  footer {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: #999;
+  }
+</style>
+</head>
+<body>
 
-quotes by anyone, for everyone - community-made quotes visible to anyone
-(im writing this because discord wants corporate slop for a discord bot... yeah....)
+  <h1>quoteified</h1>
+  <p class="tagline">quotes by anyone, for everyone — community-made quotes visible to anyone</p>
 
-here's the basics you need to know:
+  <p class="note">(idk what else to write)</p>
 
-- quoteified does not store any personal info (UNLESS YOU SUBMIT IT THROUGH /SUBMITQUOTE, why the fuck would you even do that???)
-- quoteified only saves what you submit through /submitquote permanently
-- quoteified has no permissions to modify any servers (it only has send messages permission)
-- quoteified may display your username on quotes to others if you explicitly allowed it in the settings menu under "submitquote privacy setting"
-- quoteified would never send you any ads or such
+  <p>here's the basics you need to know:</p>
 
-that's about it!!
-[add it today!!!!]\(https://discord.com/oauth2/authorize?client_id=1546149660828106783)
+  <ul>
+    <li>quoteified does not store any personal info <strong>(UNLESS YOU SUBMIT IT THROUGH /SUBMITQUOTE, why the fuck would you even do that???)</strong></li>
+    <li>quoteified only saves what you submit through /submitquote permanently</li>
+    <li>quoteified has no permissions to modify any servers (it only has send messages permission)</li>
+    <li>quoteified may display your username on quotes to others if you explicitly allowed it in the settings menu under "submitquote privacy setting"</li>
+    <li>quoteified would never send you any ads or such</li>
+    <li>all the things you submit through /submitquote are reviewed by human reviewers and not ai (ew ai)</li>
+  </ul>
+
+  <p>that's about it!!</p>
+
+  <a class="cta" href="https://discord.com/oauth2/authorize?client_id=1546149660828106783">add it today!!!!</a>
+
+  <footer>
+    last updated: <span id="date"></span>
+  </footer>
+
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString();
+  </script>
+
+</body>
+</html>
